@@ -1,0 +1,33 @@
+{
+    "name": "triptasoft/laravel-installer",
+    "description": "Laravel web installer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Triptasoft",
+            "email": "developer@triptasoft.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Triptasoft\\LaravelInstaller\\": "src/"
+        },
+        "files": [
+            "src/Helpers/functions.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Triptasoft\\LaravelInstaller\\Providers\\LaravelInstallerServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
